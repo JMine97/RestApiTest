@@ -1,0 +1,21 @@
+### 전체 멤버 불러오기
+GET http://localhost:8080/members
+Content-Type: application/json
+
+### 한 멤버만 불러오기
+GET http://localhost:8080/members/1
+Content-Type: application/json
+
+### 멤버 정보 저장하기
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+  "name": "David",
+  "age": 33,
+  "dept": "CEO"
+}
+
+### 멤버 정보 변경하기
+DELETE http://localhost:8080/members/1
+Content-Type: application/json
